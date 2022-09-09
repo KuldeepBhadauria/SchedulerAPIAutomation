@@ -1,0 +1,1562 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c43b89d03a7c43dae8bb8f0f078bad1997af6b3b/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Sep 10, 2022 12:24:44 AM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@CreateScheduleHappyPath</a><a class="dropdown-item" href="#">@GetScheduleByTenantIdHappyPath</a><a class="dropdown-item" href="#">@ValidateGetSchedule</a><a class="dropdown-item" href="#">@GetScheduleByTenantIdUnHappyPath</a><a class="dropdown-item" href="#">@DeleteScheduleHappyPath</a><a class="dropdown-item" href="#">@UpdateScheduleHappyPath</a><a class="dropdown-item" href="#">@api</a><a class="dropdown-item" href="#">@ValidateCreateSchedule</a><a class="dropdown-item" href="#">@ValidateUpdateSchedule</a><a class="dropdown-item" href="#">@ValidateDeleteSchedule</a><a class="dropdown-item" href="#">@CreateScheduleUnHappyPath</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag="@ValidateCreateSchedule @api"
+          device="">
+          <div class="test-detail">
+            <p class="name">Post - Create Schedule Feature</p>
+            <p class="text-sm">
+              <span>00:24:45 AM</span> / <span>30:04:426</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Post - Create Schedule Feature</h5>
+<span class='badge badge-success'>09.10.2022 00:24:45</span>
+<span class='badge badge-danger'>09.10.2022 00:24:50</span>
+<span class='badge badge-default'>30:04:426</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">@ValidateCreateSchedule</span>
+<span class="badge badge-pill badge-default">@api</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Validation of Create Schedule API</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>Validation of Create Schedule API</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User configures the base uri for api request</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User configures the header for request</span>
+      <div><table class='markup-table table '><tr><td>HeaderName</td><td>HeaderValue</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User executes "POST" request  with payload in file "CreateSchedule" and endpoint as "/CreateSchedule"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User validates response code for request is 201</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User validates response contains key value pair</span>
+      <div><table class='markup-table table '><tr><td>Key</td><td>Value</td></tr><tr><td>scheduleId</td><td>20010987FRDE987620018765000000002017</td></tr><tr><td>creationDateTime</td><td>2022-07-22T11:34:87.987</td></tr></table>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User validates response contains key "creationDateTime" with not null value</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User validates response body matches the response in file "CreateSchedule"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="68"><span class="badge log pass-bg mr-2">Pass</span>Validation of Create Schedule API</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User configures the base uri for api request</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User configures the header for request</span>
+      <div><table class='markup-table table '><tr><td>HeaderName</td><td>HeaderValue</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User executes "PUT" request  with payload in file "UpdateSchedule" and endpoint as "/UpdateSchedule/20010987FRDE987620018765000000002017"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User validates response code for request is 200</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User validates response contains key "scheduleId" with not null value</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User validates response contains key "updatedDateTime" with not null value</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User validates response contains key value pair</span>
+      <div><table class='markup-table table '><tr><td>Key</td><td>Value</td></tr><tr><td>recordStatus</td><td>SCHEDULED</td></tr></table>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User validates response body matches the response in file "UpdateSchedule"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="11"><span class="badge log pass-bg mr-2">Pass</span>Validation of Unhappy Path for Create Schedule API</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="12"><span class="badge log pass-bg mr-2">Pass</span>Validation of Unhappy Path for Create Schedule API</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User configures the base uri for api request</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User configures the header for request</span>
+      <div><table class='markup-table table '><tr><td>HeaderName</td><td>HeaderValue</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User executes "POST" request  with payload in file "CreateScheduleMissingParameters" and endpoint as "/CreateSchedule"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User validates response code for request is 400</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User validates response contains key value pair</span>
+      <div><table class='markup-table table '><tr><td>Key</td><td>Value</td></tr><tr><td>Error</td><td>Either one or all of the mandatory fields required are missing</td></tr></table>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User validates response body matches the response in file "CreateScheduleMissingParameters"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="19"
+          author=""
+          tag="@ValidateDeleteSchedule @api"
+          device="">
+          <div class="test-detail">
+            <p class="name">Delete Schedule Feature</p>
+            <p class="text-sm">
+              <span>00:24:49 AM</span> / <span>30:00:136</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Delete Schedule Feature</h5>
+<span class='badge badge-success'>09.10.2022 00:24:49</span>
+<span class='badge badge-danger'>09.10.2022 00:24:49</span>
+<span class='badge badge-default'>30:00:136</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">@ValidateDeleteSchedule</span>
+<span class="badge badge-pill badge-default">@api</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="20"><span class="badge log pass-bg mr-2">Pass</span>Validation of Delete Schedule API</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="21"><span class="badge log pass-bg mr-2">Pass</span>Validation of Delete Schedule API</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User configures the base uri for api request</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User configures the header for request</span>
+      <div><table class='markup-table table '><tr><td>HeaderName</td><td>HeaderValue</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User executes "DELETE" request  with endpoint "/deleteSchedule/20010987FRDE987620018765000000002017"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User validates response code for request is 200</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User validates response contains key value pair</span>
+      <div><table class='markup-table table '><tr><td>Key</td><td>Value</td></tr><tr><td>success</td><td>OK</td></tr></table>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User validates response body matches the response in file "DeleteSchedule"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="28"
+          author=""
+          tag="@ValidateGetSchedule @api"
+          device="">
+          <div class="test-detail">
+            <p class="name">Get Schedule By Teanant Id Feature</p>
+            <p class="text-sm">
+              <span>00:24:49 AM</span> / <span>30:00:444</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Get Schedule By Teanant Id Feature</h5>
+<span class='badge badge-success'>09.10.2022 00:24:49</span>
+<span class='badge badge-danger'>09.10.2022 00:24:49</span>
+<span class='badge badge-default'>30:00:444</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=28</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">@ValidateGetSchedule</span>
+<span class="badge badge-pill badge-default">@api</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="29"><span class="badge log pass-bg mr-2">Pass</span>Validation of Get Schedule By Valid Tenanat Id</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.poc.api.automation.steps.ApiSteps.configureBaseUri()">
+                <span>Given User configures the base uri for api request</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.poc.api.automation.steps.ApiSteps.configureHeaders(io.cucumber.datatable.DataTable)">
+                <span>When User configures the header for request</span>
+      <div><table class='markup-table table '><tr><td>HeaderName</td><td>HeaderValue</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.poc.api.automation.steps.ApiSteps.executeRequestWithPayloadAndPath(java.lang.String,java.lang.String)">
+                <span>And User executes "GET" request  with endpoint "getSchedulebyTenantId?tenantId=TENANTID001"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.poc.api.automation.steps.ApiSteps.validateResponseCode(int)">
+                <span>Then User validates response code for request is 200</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.poc.api.automation.steps.ApiSteps.vlaidateKeyValueInResponse(io.cucumber.datatable.DataTable)">
+                <span>And User validates response contains key value pair</span>
+      <div><table class='markup-table table '><tr><td>Key</td><td>Value</td></tr><tr><td>scheduleId</td><td>20010987FRDE987620018765000000002017</td></tr><tr><td>recordStatus</td><td>SCHEDULED</td></tr></table>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.poc.api.automation.steps.ApiSteps.validateResponseAsPerResponseStoredInFilePath(java.lang.String)">
+                <span>And User validates response body matches the response in file "GetScheduleByTenantID"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="36"><span class="badge log pass-bg mr-2">Pass</span>Validation of Get Schedule By Invalid Tenanat Id</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="37"><span class="badge log pass-bg mr-2">Pass</span>Validation of Get Schedule By Invalid Tenanat Id</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User configures the base uri for api request</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User configures the header for request</span>
+      <div><table class='markup-table table '><tr><td>HeaderName</td><td>HeaderValue</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User executes "GET" request  with endpoint "getSchedulebyTenantId?tenantId=TENANTID006"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User validates response code for request is 404</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User validates response body matches the response in file "GetScheduleByNotPresentTenantID"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="43"><span class="badge log pass-bg mr-2">Pass</span>Validation of Get Schedule By Invalid Tenanat Id</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User configures the base uri for api request</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User configures the header for request</span>
+      <div><table class='markup-table table '><tr><td>HeaderName</td><td>HeaderValue</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User executes "GET" request  with endpoint "getSchedulebyTenantId?tenantId=TENANTID0@@"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User validates response code for request is 400</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User validates response body matches the response in file "GetScheduleByNonAlphanumericTenantID"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="49"><span class="badge log pass-bg mr-2">Pass</span>Validation of Get Schedule By Invalid Tenanat Id</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User configures the base uri for api request</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User configures the header for request</span>
+      <div><table class='markup-table table '><tr><td>HeaderName</td><td>HeaderValue</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User executes "GET" request  with endpoint "getSchedulebyTenantId?tenantId="</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User validates response code for request is 400</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User validates response body matches the response in file "GetScheduleByNullTenantID"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="55"><span class="badge log pass-bg mr-2">Pass</span>Validation of Get Schedule By Invalid Tenanat Id</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User configures the base uri for api request</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User configures the header for request</span>
+      <div><table class='markup-table table '><tr><td>HeaderName</td><td>HeaderValue</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User executes "GET" request  with endpoint "getSchedulebyTenantId?tenantId=TENANTIDNINE"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User validates response code for request is 400</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User validates response body matches the response in file "GetScheduleByNonAlphanumericTenantID"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="61"><span class="badge log pass-bg mr-2">Pass</span>Validation of Get Schedule By Invalid Tenanat Id</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given User configures the base uri for api request</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User configures the header for request</span>
+      <div><table class='markup-table table '><tr><td>HeaderName</td><td>HeaderValue</td></tr><tr><td>Content-Type</td><td>application/json</td></tr></table>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User executes "GET" request  with endpoint "getSchedulebyTenantId?tenantId=0000082"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User validates response code for request is 400</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User validates response body matches the response in file "GetScheduleByNonAlphanumericTenantID"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="67"
+          author=""
+          tag="@api @ValidateUpdateSchedule"
+          device="">
+          <div class="test-detail">
+            <p class="name">Put - Update Schedule Feature</p>
+            <p class="text-sm">
+              <span>00:24:49 AM</span> / <span>30:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Put - Update Schedule Feature</h5>
+<span class='badge badge-success'>09.10.2022 00:24:49</span>
+<span class='badge badge-danger'>09.10.2022 00:24:49</span>
+<span class='badge badge-default'>30:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=67</span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">@api</span>
+<span class="badge badge-pill badge-default">@ValidateUpdateSchedule</span></div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">11</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@CreateScheduleHappyPath</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CreateScheduleHappyPath</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:45 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Validation of Create Schedule API</a>
+<div class="">
+<span class="badge badge-default">Post - Create Schedule Feature.Validation of Create Schedule API</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:45 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>Validation of Create Schedule API</a>
+<div class="">
+<span class="badge badge-default">Post - Create Schedule Feature.Validation of Create Schedule API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@GetScheduleByTenantIdHappyPath</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GetScheduleByTenantIdHappyPath</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='29'>Validation of Get Schedule By Valid Tenanat Id</a>
+<div class="">
+<span class="badge badge-default">Get Schedule By Teanant Id Feature.Validation of Get Schedule By Valid Tenanat Id</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>7</span>
+</span>
+<p class="name">@ValidateGetSchedule</p>
+<p class="duration text-sm">7 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@ValidateGetSchedule</h4>
+<span status="pass" class='badge log pass-bg'>7 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='28'>Get Schedule By Teanant Id Feature</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='29'>Validation of Get Schedule By Valid Tenanat Id</a>
+<div class="">
+<span class="badge badge-default">Get Schedule By Teanant Id Feature.Validation of Get Schedule By Valid Tenanat Id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='37'>Validation of Get Schedule By Invalid Tenanat Id</a>
+<div class="">
+<span class="badge badge-default">Get Schedule By Teanant Id Feature.Validation of Get Schedule By Invalid Tenanat Id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='43'>Validation of Get Schedule By Invalid Tenanat Id</a>
+<div class="">
+<span class="badge badge-default">Get Schedule By Teanant Id Feature.Validation of Get Schedule By Invalid Tenanat Id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='49'>Validation of Get Schedule By Invalid Tenanat Id</a>
+<div class="">
+<span class="badge badge-default">Get Schedule By Teanant Id Feature.Validation of Get Schedule By Invalid Tenanat Id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='55'>Validation of Get Schedule By Invalid Tenanat Id</a>
+<div class="">
+<span class="badge badge-default">Get Schedule By Teanant Id Feature.Validation of Get Schedule By Invalid Tenanat Id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='61'>Validation of Get Schedule By Invalid Tenanat Id</a>
+<div class="">
+<span class="badge badge-default">Get Schedule By Teanant Id Feature.Validation of Get Schedule By Invalid Tenanat Id</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+</span>
+<p class="name">@GetScheduleByTenantIdUnHappyPath</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@GetScheduleByTenantIdUnHappyPath</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='36'>Validation of Get Schedule By Invalid Tenanat Id</a>
+<div class="">
+<span class="badge badge-default">Get Schedule By Teanant Id Feature.Validation of Get Schedule By Invalid Tenanat Id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='37'>Validation of Get Schedule By Invalid Tenanat Id</a>
+<div class="">
+<span class="badge badge-default">Get Schedule By Teanant Id Feature.Validation of Get Schedule By Invalid Tenanat Id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='43'>Validation of Get Schedule By Invalid Tenanat Id</a>
+<div class="">
+<span class="badge badge-default">Get Schedule By Teanant Id Feature.Validation of Get Schedule By Invalid Tenanat Id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='49'>Validation of Get Schedule By Invalid Tenanat Id</a>
+<div class="">
+<span class="badge badge-default">Get Schedule By Teanant Id Feature.Validation of Get Schedule By Invalid Tenanat Id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='55'>Validation of Get Schedule By Invalid Tenanat Id</a>
+<div class="">
+<span class="badge badge-default">Get Schedule By Teanant Id Feature.Validation of Get Schedule By Invalid Tenanat Id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='61'>Validation of Get Schedule By Invalid Tenanat Id</a>
+<div class="">
+<span class="badge badge-default">Get Schedule By Teanant Id Feature.Validation of Get Schedule By Invalid Tenanat Id</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@DeleteScheduleHappyPath</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@DeleteScheduleHappyPath</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='19' id='20'>Validation of Delete Schedule API</a>
+<div class="">
+<span class="badge badge-default">Delete Schedule Feature.Validation of Delete Schedule API</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='19' id='21'>Validation of Delete Schedule API</a>
+<div class="">
+<span class="badge badge-default">Delete Schedule Feature.Validation of Delete Schedule API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@UpdateScheduleHappyPath</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@UpdateScheduleHappyPath</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='68'>Validation of Create Schedule API</a>
+<div class="">
+<span class="badge badge-default">Post - Create Schedule Feature.Validation of Create Schedule API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>14</span>
+</span>
+<p class="name">@api</p>
+<p class="duration text-sm">14 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@api</h4>
+<span status="pass" class='badge log pass-bg'>14 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:45 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>Post - Create Schedule Feature</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:45 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>Validation of Create Schedule API</a>
+<div class="">
+<span class="badge badge-default">Post - Create Schedule Feature.Validation of Create Schedule API</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='12'>Validation of Unhappy Path for Create Schedule API</a>
+<div class="">
+<span class="badge badge-default">Post - Create Schedule Feature.Validation of Unhappy Path for Create Schedule API</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='19' id='19'>Delete Schedule Feature</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='19' id='21'>Validation of Delete Schedule API</a>
+<div class="">
+<span class="badge badge-default">Delete Schedule Feature.Validation of Delete Schedule API</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='28'>Get Schedule By Teanant Id Feature</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='29'>Validation of Get Schedule By Valid Tenanat Id</a>
+<div class="">
+<span class="badge badge-default">Get Schedule By Teanant Id Feature.Validation of Get Schedule By Valid Tenanat Id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='37'>Validation of Get Schedule By Invalid Tenanat Id</a>
+<div class="">
+<span class="badge badge-default">Get Schedule By Teanant Id Feature.Validation of Get Schedule By Invalid Tenanat Id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='43'>Validation of Get Schedule By Invalid Tenanat Id</a>
+<div class="">
+<span class="badge badge-default">Get Schedule By Teanant Id Feature.Validation of Get Schedule By Invalid Tenanat Id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='49'>Validation of Get Schedule By Invalid Tenanat Id</a>
+<div class="">
+<span class="badge badge-default">Get Schedule By Teanant Id Feature.Validation of Get Schedule By Invalid Tenanat Id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='55'>Validation of Get Schedule By Invalid Tenanat Id</a>
+<div class="">
+<span class="badge badge-default">Get Schedule By Teanant Id Feature.Validation of Get Schedule By Invalid Tenanat Id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='28' id='61'>Validation of Get Schedule By Invalid Tenanat Id</a>
+<div class="">
+<span class="badge badge-default">Get Schedule By Teanant Id Feature.Validation of Get Schedule By Invalid Tenanat Id</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='67' id='67'>Put - Update Schedule Feature</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='68'>Validation of Create Schedule API</a>
+<div class="">
+<span class="badge badge-default">Post - Create Schedule Feature.Validation of Create Schedule API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@ValidateCreateSchedule</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@ValidateCreateSchedule</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:45 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>Post - Create Schedule Feature</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:45 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>Validation of Create Schedule API</a>
+<div class="">
+<span class="badge badge-default">Post - Create Schedule Feature.Validation of Create Schedule API</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='12'>Validation of Unhappy Path for Create Schedule API</a>
+<div class="">
+<span class="badge badge-default">Post - Create Schedule Feature.Validation of Unhappy Path for Create Schedule API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@ValidateUpdateSchedule</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@ValidateUpdateSchedule</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='67' id='67'>Put - Update Schedule Feature</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='68'>Validation of Create Schedule API</a>
+<div class="">
+<span class="badge badge-default">Post - Create Schedule Feature.Validation of Create Schedule API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@ValidateDeleteSchedule</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@ValidateDeleteSchedule</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='19' id='19'>Delete Schedule Feature</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='19' id='21'>Validation of Delete Schedule API</a>
+<div class="">
+<span class="badge badge-default">Delete Schedule Feature.Validation of Delete Schedule API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@CreateScheduleUnHappyPath</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CreateScheduleUnHappyPath</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='11'>Validation of Unhappy Path for Create Schedule API</a>
+<div class="">
+<span class="badge badge-default">Post - Create Schedule Feature.Validation of Unhappy Path for Create Schedule API</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>00:24:49 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='12'>Validation of Unhappy Path for Create Schedule API</a>
+<div class="">
+<span class="badge badge-default">Post - Create Schedule Feature.Validation of Unhappy Path for Create Schedule API</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Sep 10, 2022 12:24:44 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Sep 10, 2022 12:24:50 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>4</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>4</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>10</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>58</b> steps passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Post - Create Schedule Feature":4.426,"Delete Schedule Feature":0.136,"Get Schedule By Teanant Id Feature":0.444,"Put - Update Schedule Feature":0
+};
+</script>
+<div class="row">
+<div class="col-md-4 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@CreateScheduleHappyPath</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GetScheduleByTenantIdHappyPath</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@ValidateGetSchedule</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@GetScheduleByTenantIdUnHappyPath</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@DeleteScheduleHappyPath</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@UpdateScheduleHappyPath</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@api</td>
+<td>14</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@ValidateCreateSchedule</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@ValidateUpdateSchedule</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@ValidateDeleteSchedule</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@CreateScheduleUnHappyPath</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 4,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 10,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 58,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@14e9bb345ef7e2ed3a102f271d84e9f0267c88e7/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

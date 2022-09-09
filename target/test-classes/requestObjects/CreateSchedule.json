@@ -1,0 +1,22 @@
+{
+  "tenantId": "TENANTID001",
+  "transactionId": "20010987FRDE987620018765000000002015",
+  "executionDateTime": "2022-07-22T12:34:87.987",
+  "amount": "100.00",
+  "currency": "USD",
+  "ScheduleRequest": [
+    {
+      "tenantId": "TENANTID001",
+      "bankId": "BANKID001",
+      "customerId": "CUSTOMERID001",
+      "customerAccount": "11000179512199000",
+      "transactionId": "20010987FRDE987620018765000000002015",
+      "uniqueTransactionTraceId": "20010987FRDE987620018765000000002016",
+      "uniqueTransactionrefId": "6b979230-6548-a6cd-6592-02f54cf7",
+      "amount": "100.00",
+      "currency": "USD",
+      "methodofPayments": "TCHRTP",
+      "executionDateTime": "2022-07-22T12:34:87.987"
+    }
+  ]
+}

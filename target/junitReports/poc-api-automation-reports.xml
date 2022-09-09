@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="10" time="4.75">
+<testcase classname="Post - Create Schedule Feature" name="Validation of Create Schedule API" time="3.588">
+<system-out><![CDATA[Given User configures the base uri for api request..........................passed
+When User configures the header for request.................................passed
+And User executes "POST" request  with payload in file "CreateSchedule" and endpoint as "/CreateSchedule".passed
+Then User validates response code for request is 201........................passed
+And User validates response contains key value pair.........................passed
+And User validates response contains key "creationDateTime" with not null value.passed
+And User validates response body matches the response in file "CreateSchedule".passed
+]]></system-out>
+</testcase>
+<testcase classname="Post - Create Schedule Feature" name="Validation of Unhappy Path for Create Schedule API" time="0.149">
+<system-out><![CDATA[Given User configures the base uri for api request..........................passed
+When User configures the header for request.................................passed
+And User executes "POST" request  with payload in file "CreateScheduleMissingParameters" and endpoint as "/CreateSchedule".passed
+Then User validates response code for request is 400........................passed
+And User validates response contains key value pair.........................passed
+And User validates response body matches the response in file "CreateScheduleMissingParameters".passed
+]]></system-out>
+</testcase>
+<testcase classname="Delete Schedule Feature" name="Validation of Delete Schedule API" time="0.151">
+<system-out><![CDATA[Given User configures the base uri for api request..........................passed
+When User configures the header for request.................................passed
+And User executes "DELETE" request  with endpoint "/deleteSchedule/20010987FRDE987620018765000000002017".passed
+Then User validates response code for request is 200........................passed
+And User validates response contains key value pair.........................passed
+And User validates response body matches the response in file "DeleteSchedule".passed
+]]></system-out>
+</testcase>
+<testcase classname="Get Schedule By Teanant Id Feature" name="Validation of Get Schedule By Valid Tenanat Id" time="0.171">
+<system-out><![CDATA[Given User configures the base uri for api request..........................passed
+When User configures the header for request.................................passed
+And User executes "GET" request  with endpoint "getSchedulebyTenantId?tenantId=TENANTID001".passed
+Then User validates response code for request is 200........................passed
+And User validates response contains key value pair.........................passed
+And User validates response body matches the response in file "GetScheduleByTenantID".passed
+]]></system-out>
+</testcase>
+<testcase classname="Get Schedule By Teanant Id Feature" name="Validation of Get Schedule By Invalid Tenanat Id" time="0.049">
+<system-out><![CDATA[Given User configures the base uri for api request..........................passed
+When User configures the header for request.................................passed
+And User executes "GET" request  with endpoint "getSchedulebyTenantId?tenantId=TENANTID006".passed
+Then User validates response code for request is 404........................passed
+And User validates response body matches the response in file "GetScheduleByNotPresentTenantID".passed
+]]></system-out>
+</testcase>
+<testcase classname="Get Schedule By Teanant Id Feature" name="Validation of Get Schedule By Invalid Tenanat Id 2" time="0.061">
+<system-out><![CDATA[Given User configures the base uri for api request..........................passed
+When User configures the header for request.................................passed
+And User executes "GET" request  with endpoint "getSchedulebyTenantId?tenantId=TENANTID0@@".passed
+Then User validates response code for request is 400........................passed
+And User validates response body matches the response in file "GetScheduleByNonAlphanumericTenantID".passed
+]]></system-out>
+</testcase>
+<testcase classname="Get Schedule By Teanant Id Feature" name="Validation of Get Schedule By Invalid Tenanat Id 3" time="0.053">
+<system-out><![CDATA[Given User configures the base uri for api request..........................passed
+When User configures the header for request.................................passed
+And User executes "GET" request  with endpoint "getSchedulebyTenantId?tenantId=".passed
+Then User validates response code for request is 400........................passed
+And User validates response body matches the response in file "GetScheduleByNullTenantID".passed
+]]></system-out>
+</testcase>
+<testcase classname="Get Schedule By Teanant Id Feature" name="Validation of Get Schedule By Invalid Tenanat Id 4" time="0.043">
+<system-out><![CDATA[Given User configures the base uri for api request..........................passed
+When User configures the header for request.................................passed
+And User executes "GET" request  with endpoint "getSchedulebyTenantId?tenantId=TENANTIDNINE".passed
+Then User validates response code for request is 400........................passed
+And User validates response body matches the response in file "GetScheduleByNonAlphanumericTenantID".passed
+]]></system-out>
+</testcase>
+<testcase classname="Get Schedule By Teanant Id Feature" name="Validation of Get Schedule By Invalid Tenanat Id 5" time="0.054">
+<system-out><![CDATA[Given User configures the base uri for api request..........................passed
+When User configures the header for request.................................passed
+And User executes "GET" request  with endpoint "getSchedulebyTenantId?tenantId=0000082".passed
+Then User validates response code for request is 400........................passed
+And User validates response body matches the response in file "GetScheduleByNonAlphanumericTenantID".passed
+]]></system-out>
+</testcase>
+<testcase classname="Put - Update Schedule Feature" name="Validation of Create Schedule API" time="0.145">
+<system-out><![CDATA[Given User configures the base uri for api request..........................passed
+When User configures the header for request.................................passed
+And User executes "PUT" request  with payload in file "UpdateSchedule" and endpoint as "/UpdateSchedule/20010987FRDE987620018765000000002017".passed
+Then User validates response code for request is 200........................passed
+And User validates response contains key "scheduleId" with not null value...passed
+And User validates response contains key "updatedDateTime" with not null value.passed
+And User validates response contains key value pair.........................passed
+And User validates response body matches the response in file "UpdateSchedule".passed
+]]></system-out>
+</testcase>
+</testsuite>

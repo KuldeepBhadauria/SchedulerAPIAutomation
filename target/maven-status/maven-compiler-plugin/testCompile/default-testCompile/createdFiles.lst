@@ -1,0 +1,4 @@
+com\poc\api\automation\steps\ApiSteps.class
+com\poc\api\automation\runner\TestRunner.class
+com\poc\api\automation\config\ConfigProvider.class
+com\poc\api\automation\specifications\ApiSpecifications.class
