@@ -15,7 +15,7 @@ Feature: Put - Update Schedule Feature
     | HeaderName  |   HeaderValue    |
     |Content-Type |application/json  |
     
-    And User executes "PUT" request  with payload in file "<fileName>" and endpoint as "<Endpoint>"
+    And User executes "<requestMethod>" request  with payload in file "<fileName>" and endpoint as "<Endpoint>"
     Then User validates response code for request is <ResponseCode>
     And User validates response contains key "scheduleId" with not null value
     And User validates response contains key "updatedDateTime" with not null value
@@ -27,5 +27,5 @@ Feature: Put - Update Schedule Feature
     And User validates response body matches the response in file "<fileName>"
     
     Examples:
-    |Endpoint                                            |fileName      |ResponseCode|
-    |/UpdateSchedule/20010987FRDE987620018765000000002017|UpdateSchedule|     200    |
+    |requestMethod|Endpoint                                            |fileName      |ResponseCode|
+    |PUT          |/UpdateSchedule/20010987FRDE987620018765000000002017|UpdateSchedule|     200    |

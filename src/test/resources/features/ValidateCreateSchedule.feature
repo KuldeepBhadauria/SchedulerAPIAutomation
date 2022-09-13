@@ -15,7 +15,7 @@ Feature: Post - Create Schedule Feature
     | HeaderName  |   HeaderValue    |
     |Content-Type |application/json  |
         
-    And User executes "POST" request  with payload in file "<fileName>" and endpoint as "<Endpoint>"
+    And User executes "<requestMethod>" request  with payload in file "<fileName>" and endpoint as "<Endpoint>"
     Then User validates response code for request is <ResponseCode>
     And User validates response contains key value pair
     
@@ -27,8 +27,8 @@ Feature: Post - Create Schedule Feature
     And User validates response body matches the response in file "<fileName>"
     
     Examples:
-    |Endpoint       |fileName      |ResponseCode|
-    |/CreateSchedule|CreateSchedule|     201    |
+    |requestMethod|Endpoint       |fileName      |ResponseCode|
+    |POST         |/CreateSchedule|CreateSchedule|     201    |
     
   
   
@@ -40,7 +40,7 @@ Feature: Post - Create Schedule Feature
     | HeaderName  |   HeaderValue    |
     |Content-Type |application/json  |
       
-    And User executes "POST" request  with payload in file "<fileName>" and endpoint as "<Endpoint>"
+    And User executes "<requestMethod>" request  with payload in file "<fileName>" and endpoint as "<Endpoint>"
     Then User validates response code for request is <ResponseCode>
     And User validates response contains key value pair
     
@@ -50,8 +50,8 @@ Feature: Post - Create Schedule Feature
     And User validates response body matches the response in file "<fileName>"
     
     Examples:
-    |Endpoint       |fileName                       |ResponseCode|
-    |/CreateSchedule|CreateScheduleMissingParameters|     400    |
+    |requestMethod|Endpoint       |fileName                       |ResponseCode|
+    |POST         |/CreateSchedule|CreateScheduleMissingParameters|     400    |
    
   
   

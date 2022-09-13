@@ -3,7 +3,7 @@
     "line": 7,
     "elements": [
       {
-        "start_timestamp": "2022-09-09T18:54:45.569Z",
+        "start_timestamp": "2022-09-09T19:16:03.964Z",
         "line": 31,
         "name": "Validation of Create Schedule API",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 597000000,
+              "duration": 722000000,
               "status": "passed"
             },
             "line": 12,
@@ -51,7 +51,7 @@
           },
           {
             "result": {
-              "duration": 1299000000,
+              "duration": 1475000000,
               "status": "passed"
             },
             "line": 18,
@@ -77,7 +77,7 @@
           },
           {
             "result": {
-              "duration": 120000000,
+              "duration": 79000000,
               "status": "passed"
             },
             "line": 19,
@@ -95,7 +95,7 @@
           },
           {
             "result": {
-              "duration": 1266000000,
+              "duration": 1145000000,
               "status": "passed"
             },
             "line": 20,
@@ -127,7 +127,7 @@
           },
           {
             "result": {
-              "duration": 21000000,
+              "duration": 16000000,
               "status": "passed"
             },
             "line": 26,
@@ -175,7 +175,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-09T18:54:49.180Z",
+        "start_timestamp": "2022-09-09T19:16:07.698Z",
         "line": 54,
         "name": "Validation of Unhappy Path for Create Schedule API",
         "description": "",
@@ -185,7 +185,6 @@
         "steps": [
           {
             "result": {
-              "duration": 4000000,
               "status": "passed"
             },
             "line": 37,
@@ -197,7 +196,6 @@
           },
           {
             "result": {
-              "duration": 3000000,
               "status": "passed"
             },
             "line": 38,
@@ -223,7 +221,7 @@
           },
           {
             "result": {
-              "duration": 65000000,
+              "duration": 63000000,
               "status": "passed"
             },
             "line": 43,
@@ -249,7 +247,7 @@
           },
           {
             "result": {
-              "duration": 2000000,
+              "duration": 4000000,
               "status": "passed"
             },
             "line": 44,
@@ -267,7 +265,7 @@
           },
           {
             "result": {
-              "duration": 53000000,
+              "duration": 43000000,
               "status": "passed"
             },
             "line": 45,
@@ -293,7 +291,6 @@
           },
           {
             "result": {
-              "duration": 2000000,
               "status": "passed"
             },
             "line": 50,
@@ -351,7 +348,7 @@
     "line": 7,
     "elements": [
       {
-        "start_timestamp": "2022-09-09T18:54:49.348Z",
+        "start_timestamp": "2022-09-09T19:16:07.824Z",
         "line": 29,
         "name": "Validation of Delete Schedule API",
         "description": "",
@@ -361,7 +358,6 @@
         "steps": [
           {
             "result": {
-              "duration": 3000000,
               "status": "passed"
             },
             "line": 12,
@@ -373,7 +369,6 @@
           },
           {
             "result": {
-              "duration": 3000000,
               "status": "passed"
             },
             "line": 13,
@@ -399,7 +394,7 @@
           },
           {
             "result": {
-              "duration": 87000000,
+              "duration": 79000000,
               "status": "passed"
             },
             "line": 18,
@@ -421,7 +416,6 @@
           },
           {
             "result": {
-              "duration": 3000000,
               "status": "passed"
             },
             "line": 19,
@@ -439,7 +433,7 @@
           },
           {
             "result": {
-              "duration": 25000000,
+              "duration": 16000000,
               "status": "passed"
             },
             "line": 20,
@@ -465,7 +459,7 @@
           },
           {
             "result": {
-              "duration": 3000000,
+              "duration": 15000000,
               "status": "passed"
             },
             "line": 25,
@@ -523,7 +517,7 @@
     "line": 7,
     "elements": [
       {
-        "start_timestamp": "2022-09-09T18:54:49.508Z",
+        "start_timestamp": "2022-09-09T19:16:07.949Z",
         "line": 11,
         "name": "Validation of Get Schedule By Valid Tenanat Id",
         "description": "",
@@ -533,7 +527,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2000000,
+              "duration": 16000000,
               "status": "passed"
             },
             "line": 12,
@@ -545,7 +539,6 @@
           },
           {
             "result": {
-              "duration": 5000000,
               "status": "passed"
             },
             "line": 13,
@@ -571,7 +564,7 @@
           },
           {
             "result": {
-              "duration": 88000000,
+              "duration": 62000000,
               "status": "passed"
             },
             "line": 18,
@@ -593,7 +586,6 @@
           },
           {
             "result": {
-              "duration": 3000000,
               "status": "passed"
             },
             "line": 19,
@@ -611,7 +603,7 @@
           },
           {
             "result": {
-              "duration": 44000000,
+              "duration": 48000000,
               "status": "passed"
             },
             "line": 20,
@@ -643,7 +635,6 @@
           },
           {
             "result": {
-              "duration": 4000000,
               "status": "passed"
             },
             "line": 26,
@@ -673,7 +664,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-09T18:54:49.684Z",
+        "start_timestamp": "2022-09-09T19:16:08.106Z",
         "line": 44,
         "name": "Validation of Get Schedule By Invalid Tenanat Id",
         "description": "",
@@ -683,7 +674,6 @@
         "steps": [
           {
             "result": {
-              "duration": 2000000,
               "status": "passed"
             },
             "line": 31,
@@ -695,7 +685,6 @@
           },
           {
             "result": {
-              "duration": 2000000,
               "status": "passed"
             },
             "line": 32,
@@ -721,7 +710,7 @@
           },
           {
             "result": {
-              "duration": 27000000,
+              "duration": 16000000,
               "status": "passed"
             },
             "line": 37,
@@ -743,7 +732,7 @@
           },
           {
             "result": {
-              "duration": 3000000,
+              "duration": 15000000,
               "status": "passed"
             },
             "line": 38,
@@ -761,7 +750,6 @@
           },
           {
             "result": {
-              "duration": 3000000,
               "status": "passed"
             },
             "line": 39,
@@ -791,7 +779,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-09T18:54:49.738Z",
+        "start_timestamp": "2022-09-09T19:16:08.166Z",
         "line": 45,
         "name": "Validation of Get Schedule By Invalid Tenanat Id",
         "description": "",
@@ -801,7 +789,6 @@
         "steps": [
           {
             "result": {
-              "duration": 4000000,
               "status": "passed"
             },
             "line": 31,
@@ -813,7 +800,6 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 32,
@@ -839,7 +825,7 @@
           },
           {
             "result": {
-              "duration": 42000000,
+              "duration": 31000000,
               "status": "passed"
             },
             "line": 37,
@@ -861,7 +847,7 @@
           },
           {
             "result": {
-              "duration": 2000000,
+              "duration": 16000000,
               "status": "passed"
             },
             "line": 38,
@@ -879,7 +865,6 @@
           },
           {
             "result": {
-              "duration": 3000000,
               "status": "passed"
             },
             "line": 39,
@@ -909,7 +894,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-09T18:54:49.806Z",
+        "start_timestamp": "2022-09-09T19:16:08.232Z",
         "line": 46,
         "name": "Validation of Get Schedule By Invalid Tenanat Id",
         "description": "",
@@ -919,7 +904,6 @@
         "steps": [
           {
             "result": {
-              "duration": 2000000,
               "status": "passed"
             },
             "line": 31,
@@ -931,7 +915,6 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 32,
@@ -957,7 +940,7 @@
           },
           {
             "result": {
-              "duration": 39000000,
+              "duration": 47000000,
               "status": "passed"
             },
             "line": 37,
@@ -979,7 +962,6 @@
           },
           {
             "result": {
-              "duration": 2000000,
               "status": "passed"
             },
             "line": 38,
@@ -997,7 +979,7 @@
           },
           {
             "result": {
-              "duration": 2000000,
+              "duration": 16000000,
               "status": "passed"
             },
             "line": 39,
@@ -1027,7 +1009,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-09T18:54:49.866Z",
+        "start_timestamp": "2022-09-09T19:16:08.295Z",
         "line": 47,
         "name": "Validation of Get Schedule By Invalid Tenanat Id",
         "description": "",
@@ -1037,7 +1019,6 @@
         "steps": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 31,
@@ -1049,7 +1030,6 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 32,
@@ -1075,7 +1055,7 @@
           },
           {
             "result": {
-              "duration": 30000000,
+              "duration": 32000000,
               "status": "passed"
             },
             "line": 37,
@@ -1097,7 +1077,6 @@
           },
           {
             "result": {
-              "duration": 2000000,
               "status": "passed"
             },
             "line": 38,
@@ -1115,7 +1094,6 @@
           },
           {
             "result": {
-              "duration": 2000000,
               "status": "passed"
             },
             "line": 39,
@@ -1145,7 +1123,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-09T18:54:49.916Z",
+        "start_timestamp": "2022-09-09T19:16:08.357Z",
         "line": 48,
         "name": "Validation of Get Schedule By Invalid Tenanat Id",
         "description": "",
@@ -1155,7 +1133,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2000000,
+              "duration": 9000000,
               "status": "passed"
             },
             "line": 31,
@@ -1167,7 +1145,6 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 32,
@@ -1193,7 +1170,7 @@
           },
           {
             "result": {
-              "duration": 40000000,
+              "duration": 39000000,
               "status": "passed"
             },
             "line": 37,
@@ -1215,7 +1192,6 @@
           },
           {
             "result": {
-              "duration": 2000000,
               "status": "passed"
             },
             "line": 38,
@@ -1233,7 +1209,6 @@
           },
           {
             "result": {
-              "duration": 2000000,
               "status": "passed"
             },
             "line": 39,
@@ -1291,7 +1266,7 @@
     "line": 7,
     "elements": [
       {
-        "start_timestamp": "2022-09-09T18:54:49.977Z",
+        "start_timestamp": "2022-09-09T19:16:08.420Z",
         "line": 31,
         "name": "Validation of Create Schedule API",
         "description": "",
@@ -1301,7 +1276,6 @@
         "steps": [
           {
             "result": {
-              "duration": 2000000,
               "status": "passed"
             },
             "line": 12,
@@ -1313,7 +1287,6 @@
           },
           {
             "result": {
-              "duration": 2000000,
               "status": "passed"
             },
             "line": 13,
@@ -1339,7 +1312,7 @@
           },
           {
             "result": {
-              "duration": 61000000,
+              "duration": 78000000,
               "status": "passed"
             },
             "line": 18,
@@ -1365,7 +1338,6 @@
           },
           {
             "result": {
-              "duration": 2000000,
               "status": "passed"
             },
             "line": 19,
@@ -1383,7 +1355,7 @@
           },
           {
             "result": {
-              "duration": 21000000,
+              "duration": 16000000,
               "status": "passed"
             },
             "line": 20,
@@ -1401,7 +1373,7 @@
           },
           {
             "result": {
-              "duration": 17000000,
+              "duration": 16000000,
               "status": "passed"
             },
             "line": 21,
@@ -1419,7 +1391,7 @@
           },
           {
             "result": {
-              "duration": 20000000,
+              "duration": 21000000,
               "status": "passed"
             },
             "line": 22,
@@ -1445,7 +1417,7 @@
           },
           {
             "result": {
-              "duration": 2000000,
+              "duration": 10000000,
               "status": "passed"
             },
             "line": 27,

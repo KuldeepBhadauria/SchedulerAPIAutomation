@@ -15,7 +15,7 @@ Feature: Delete Schedule Feature
     | HeaderName  |   HeaderValue    |
     |Content-Type |application/json  |
     
-    And User executes "DELETE" request  with endpoint "<Endpoint>"
+    And User executes "<requestMethod>" request  with endpoint "<Endpoint>"
     Then User validates response code for request is <ResponseCode>
     And User validates response contains key value pair
     
@@ -25,5 +25,5 @@ Feature: Delete Schedule Feature
     And User validates response body matches the response in file "<fileName>"
     
     Examples:
-    |                Endpoint                            |ResponseCode|   fileName   |
-    |/deleteSchedule/20010987FRDE987620018765000000002017|     200    |DeleteSchedule|
+    |requestMethod|                Endpoint                            |ResponseCode|   fileName   |
+    |DELETE       |/deleteSchedule/20010987FRDE987620018765000000002017|     200    |DeleteSchedule|
