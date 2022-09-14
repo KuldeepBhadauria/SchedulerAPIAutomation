@@ -15,7 +15,7 @@ Feature: Post - Create Schedule Feature
     | HeaderName  |   HeaderValue    |
     |Content-Type |application/json  |
         
-    And User executes "<requestMethod>" request  with payload in file "<fileName>" and endpoint as "<Endpoint>"
+    And User executes "<requestMethod>" request  with payload at location "<requestFolderPath>" in file "<fileName>" and endpoint as "<Endpoint>"
     Then User validates response code for request is <ResponseCode>
     And User validates response contains key value pair
     
@@ -24,11 +24,11 @@ Feature: Post - Create Schedule Feature
     |creationDateTime|2022-07-22T11:34:87.987             |
     
     And User validates response contains key "creationDateTime" with not null value
-    And User validates response body matches the response in file "<fileName>"
+    And User validates response body matches the response in file "<fileName>" at location "<responseFolderPath>"
     
     Examples:
-    |requestMethod|Endpoint       |fileName      |ResponseCode|
-    |POST         |/CreateSchedule|CreateSchedule|     201    |
+    |requestMethod|requestFolderPath                 |Endpoint       |fileName      |responseFolderPath                 |ResponseCode|
+    |POST         |src/test/resources/requestObjects/|/CreateSchedule|CreateSchedule|src/test/resources/responseObjects/|     201    |
     
   
   
@@ -40,18 +40,18 @@ Feature: Post - Create Schedule Feature
     | HeaderName  |   HeaderValue    |
     |Content-Type |application/json  |
       
-    And User executes "<requestMethod>" request  with payload in file "<fileName>" and endpoint as "<Endpoint>"
+    And User executes "<requestMethod>" request  with payload at location "<requestFolderPath>" in file "<fileName>" and endpoint as "<Endpoint>"
     Then User validates response code for request is <ResponseCode>
     And User validates response contains key value pair
     
     |    Key         |                      Value                                   |
     |Error           |Either one or all of the mandatory fields required are missing|
     
-    And User validates response body matches the response in file "<fileName>"
+    And User validates response body matches the response in file "<fileName>" at location "<responseFolderPath>"
     
     Examples:
-    |requestMethod|Endpoint       |fileName                       |ResponseCode|
-    |POST         |/CreateSchedule|CreateScheduleMissingParameters|     400    |
+    |requestMethod|requestFolderPath                 |Endpoint       |fileName                       |responseFolderPath                 |ResponseCode|
+    |POST         |src/test/resources/requestObjects/|/CreateSchedule|CreateScheduleMissingParameters|src/test/resources/responseObjects/|     400    |
    
   
   

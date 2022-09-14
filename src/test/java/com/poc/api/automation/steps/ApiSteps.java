@@ -42,9 +42,9 @@ public class ApiSteps {
 	    }
 	}
 
-	@When("User executes {string} request  with payload in file {string} and endpoint as {string}")
-	public void executeRequestWithPayloadAndPath(String requestMethod, String filename, String path) {
-		apiSpecifications.executeRequestWithMethodTypeAndPayloadFromFile(requestMethod, filename, path);
+	@When("User executes {string} request  with payload at location {string} in file {string} and endpoint as {string}")
+	public void executeRequestWithPayloadAndPath(String requestMethod, String baseLocation, String filename, String path) {
+		apiSpecifications.executeRequestWithMethodTypeAndPayloadFromFile(requestMethod, baseLocation,filename, path);
 	}
 	
 	@When("User executes {string} request  with endpoint {string}")
@@ -86,9 +86,9 @@ public class ApiSteps {
 		
 	}
 	
-	@Then("User validates response body matches the response in file {string}")
-	public void validateResponseAsPerResponseStoredInFilePath(String filepath) throws IOException, ParseException {
-		apiSpecifications.validateResponseBodyFromFile(filepath);
+	@Then("User validates response body matches the response in file {string} at location {string}")
+	public void validateResponseAsPerResponseStoredInFilePath(String filepath, String baseLocation) throws IOException, ParseException {
+		apiSpecifications.validateResponseBodyFromFile(baseLocation, filepath);
 		
 	}
 

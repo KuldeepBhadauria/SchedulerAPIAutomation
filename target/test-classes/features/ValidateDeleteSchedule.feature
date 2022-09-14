@@ -22,8 +22,8 @@ Feature: Delete Schedule Feature
     |  Key  |Value|
     |success|OK   |
     
-    And User validates response body matches the response in file "<fileName>"
+    And User validates response body matches the response in file "<fileName>" at location "<responseFolderPath>"
     
     Examples:
-    |requestMethod|                Endpoint                            |ResponseCode|   fileName   |
-    |DELETE       |/deleteSchedule/20010987FRDE987620018765000000002017|     200    |DeleteSchedule|
+    |requestMethod|                Endpoint                            |ResponseCode|   fileName   |responseFolderPath                 |
+    |DELETE       |/deleteSchedule/20010987FRDE987620018765000000002017|     200    |DeleteSchedule|src/test/resources/responseObjects/|

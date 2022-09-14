@@ -36,11 +36,11 @@ public class ApiSpecifications {
 		request.header(headerName, headerValue);
 	}
 
-	public void executeRequestWithMethodTypeAndPayloadFromFile(String requestMethod, String fileNameFromPath,
+	public void executeRequestWithMethodTypeAndPayloadFromFile(String requestMethod, String baseLocation, String fileNameFromPath,
 			String path) {
 
 		String fileName = fileNameFromPath;
-		File jsonData = new File("src/test/resources/requestObjects/" + fileName + ".json");
+		File jsonData = new File(baseLocation + fileName + ".json");
 		String method = requestMethod.toUpperCase();
 		switch (method) {
 
@@ -129,13 +129,13 @@ public class ApiSpecifications {
 				actualValue.equalsIgnoreCase(value));
 	}
 
-	public void validateResponseBodyFromFile(String fileNameFromPath) throws IOException, ParseException {
+	public void validateResponseBodyFromFile(String baseLocation,String fileNameFromPath) throws IOException, ParseException {
 
 		String actualResponse = response.asString();
 		String fileName = fileNameFromPath;
 		String expectedResponseInString = "";
 		expectedResponseInString = new String(Files.readAllBytes(Paths
-				.get(/* System.getProperty("user.dir") + */"src/test/resources/responseObjects/" + fileName + ".json")));
+				.get(/* System.getProperty("user.dir") + */baseLocation + fileName + ".json")));
 		/*
 		 * Assert.assertTrue("Expected response is: " + expectedResponseInString +
 		 * " while actual response is: " + actualResponse,

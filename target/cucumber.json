@@ -3,7 +3,7 @@
     "line": 7,
     "elements": [
       {
-        "start_timestamp": "2022-09-09T19:16:03.964Z",
+        "start_timestamp": "2022-09-14T17:26:54.795Z",
         "line": 31,
         "name": "Validation of Create Schedule API",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 722000000,
+              "duration": 987000000,
               "status": "passed"
             },
             "line": 12,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 78000000,
+              "duration": 89000000,
               "status": "passed"
             },
             "line": 13,
@@ -51,11 +51,11 @@
           },
           {
             "result": {
-              "duration": 1475000000,
+              "duration": 1877000000,
               "status": "passed"
             },
             "line": 18,
-            "name": "User executes \"POST\" request  with payload in file \"CreateSchedule\" and endpoint as \"/CreateSchedule\"",
+            "name": "User executes \"POST\" request  with payload at location \"src/test/resources/requestObjects/\" in file \"CreateSchedule\" and endpoint as \"/CreateSchedule\"",
             "match": {
               "arguments": [
                 {
@@ -63,21 +63,25 @@
                   "offset": 14
                 },
                 {
+                  "val": "\"src/test/resources/requestObjects/\"",
+                  "offset": 55
+                },
+                {
                   "val": "\"CreateSchedule\"",
-                  "offset": 51
+                  "offset": 100
                 },
                 {
                   "val": "\"/CreateSchedule\"",
-                  "offset": 84
+                  "offset": 133
                 }
               ],
-              "location": "com.poc.api.automation.steps.ApiSteps.executeRequestWithPayloadAndPath(java.lang.String,java.lang.String,java.lang.String)"
+              "location": "com.poc.api.automation.steps.ApiSteps.executeRequestWithPayloadAndPath(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 79000000,
+              "duration": 90000000,
               "status": "passed"
             },
             "line": 19,
@@ -95,7 +99,7 @@
           },
           {
             "result": {
-              "duration": 1145000000,
+              "duration": 1615000000,
               "status": "passed"
             },
             "line": 20,
@@ -127,7 +131,7 @@
           },
           {
             "result": {
-              "duration": 16000000,
+              "duration": 34000000,
               "status": "passed"
             },
             "line": 26,
@@ -145,19 +149,23 @@
           },
           {
             "result": {
-              "duration": 15000000,
+              "duration": 21000000,
               "status": "passed"
             },
             "line": 27,
-            "name": "User validates response body matches the response in file \"CreateSchedule\"",
+            "name": "User validates response body matches the response in file \"CreateSchedule\" at location \"src/test/resources/responseObjects/\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"CreateSchedule\"",
                   "offset": 58
+                },
+                {
+                  "val": "\"src/test/resources/responseObjects/\"",
+                  "offset": 87
                 }
               ],
-              "location": "com.poc.api.automation.steps.ApiSteps.validateResponseAsPerResponseStoredInFilePath(java.lang.String)"
+              "location": "com.poc.api.automation.steps.ApiSteps.validateResponseAsPerResponseStoredInFilePath(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }
@@ -175,7 +183,7 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-09T19:16:07.698Z",
+        "start_timestamp": "2022-09-14T17:26:59.753Z",
         "line": 54,
         "name": "Validation of Unhappy Path for Create Schedule API",
         "description": "",
@@ -185,6 +193,7 @@
         "steps": [
           {
             "result": {
+              "duration": 4000000,
               "status": "passed"
             },
             "line": 37,
@@ -196,6 +205,7 @@
           },
           {
             "result": {
+              "duration": 2000000,
               "status": "passed"
             },
             "line": 38,
@@ -221,11 +231,11 @@
           },
           {
             "result": {
-              "duration": 63000000,
+              "duration": 72000000,
               "status": "passed"
             },
             "line": 43,
-            "name": "User executes \"POST\" request  with payload in file \"CreateScheduleMissingParameters\" and endpoint as \"/CreateSchedule\"",
+            "name": "User executes \"POST\" request  with payload at location \"src/test/resources/requestObjects/\" in file \"CreateScheduleMissingParameters\" and endpoint as \"/CreateSchedule\"",
             "match": {
               "arguments": [
                 {
@@ -233,21 +243,25 @@
                   "offset": 14
                 },
                 {
+                  "val": "\"src/test/resources/requestObjects/\"",
+                  "offset": 55
+                },
+                {
                   "val": "\"CreateScheduleMissingParameters\"",
-                  "offset": 51
+                  "offset": 100
                 },
                 {
                   "val": "\"/CreateSchedule\"",
-                  "offset": 101
+                  "offset": 150
                 }
               ],
-              "location": "com.poc.api.automation.steps.ApiSteps.executeRequestWithPayloadAndPath(java.lang.String,java.lang.String,java.lang.String)"
+              "location": "com.poc.api.automation.steps.ApiSteps.executeRequestWithPayloadAndPath(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 4000000,
+              "duration": 3000000,
               "status": "passed"
             },
             "line": 44,
@@ -265,7 +279,7 @@
           },
           {
             "result": {
-              "duration": 43000000,
+              "duration": 88000000,
               "status": "passed"
             },
             "line": 45,
@@ -291,18 +305,23 @@
           },
           {
             "result": {
+              "duration": 5000000,
               "status": "passed"
             },
             "line": 50,
-            "name": "User validates response body matches the response in file \"CreateScheduleMissingParameters\"",
+            "name": "User validates response body matches the response in file \"CreateScheduleMissingParameters\" at location \"src/test/resources/responseObjects/\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"CreateScheduleMissingParameters\"",
                   "offset": 58
+                },
+                {
+                  "val": "\"src/test/resources/responseObjects/\"",
+                  "offset": 104
                 }
               ],
-              "location": "com.poc.api.automation.steps.ApiSteps.validateResponseAsPerResponseStoredInFilePath(java.lang.String)"
+              "location": "com.poc.api.automation.steps.ApiSteps.validateResponseAsPerResponseStoredInFilePath(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }
@@ -348,7 +367,7 @@
     "line": 7,
     "elements": [
       {
-        "start_timestamp": "2022-09-09T19:16:07.824Z",
+        "start_timestamp": "2022-09-14T17:26:59.992Z",
         "line": 29,
         "name": "Validation of Delete Schedule API",
         "description": "",
@@ -358,6 +377,7 @@
         "steps": [
           {
             "result": {
+              "duration": 34000000,
               "status": "passed"
             },
             "line": 12,
@@ -369,6 +389,7 @@
           },
           {
             "result": {
+              "duration": 52000000,
               "status": "passed"
             },
             "line": 13,
@@ -394,7 +415,7 @@
           },
           {
             "result": {
-              "duration": 79000000,
+              "duration": 200000000,
               "status": "passed"
             },
             "line": 18,
@@ -416,6 +437,7 @@
           },
           {
             "result": {
+              "duration": 4000000,
               "status": "passed"
             },
             "line": 19,
@@ -433,7 +455,7 @@
           },
           {
             "result": {
-              "duration": 16000000,
+              "duration": 53000000,
               "status": "passed"
             },
             "line": 20,
@@ -459,19 +481,23 @@
           },
           {
             "result": {
-              "duration": 15000000,
+              "duration": 7000000,
               "status": "passed"
             },
             "line": 25,
-            "name": "User validates response body matches the response in file \"DeleteSchedule\"",
+            "name": "User validates response body matches the response in file \"DeleteSchedule\" at location \"src/test/resources/responseObjects/\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"DeleteSchedule\"",
                   "offset": 58
+                },
+                {
+                  "val": "\"src/test/resources/responseObjects/\"",
+                  "offset": 87
                 }
               ],
-              "location": "com.poc.api.automation.steps.ApiSteps.validateResponseAsPerResponseStoredInFilePath(java.lang.String)"
+              "location": "com.poc.api.automation.steps.ApiSteps.validateResponseAsPerResponseStoredInFilePath(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }
@@ -517,17 +543,17 @@
     "line": 7,
     "elements": [
       {
-        "start_timestamp": "2022-09-09T19:16:07.949Z",
-        "line": 11,
+        "start_timestamp": "2022-09-14T17:27:00.470Z",
+        "line": 30,
         "name": "Validation of Get Schedule By Valid Tenanat Id",
         "description": "",
-        "id": "get-schedule-by-teanant-id-feature;validation-of-get-schedule-by-valid-tenanat-id",
+        "id": "get-schedule-by-teanant-id-feature;validation-of-get-schedule-by-valid-tenanat-id;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 16000000,
+              "duration": 2000000,
               "status": "passed"
             },
             "line": 12,
@@ -539,6 +565,7 @@
           },
           {
             "result": {
+              "duration": 8000000,
               "status": "passed"
             },
             "line": 13,
@@ -564,7 +591,7 @@
           },
           {
             "result": {
-              "duration": 62000000,
+              "duration": 151000000,
               "status": "passed"
             },
             "line": 18,
@@ -586,6 +613,7 @@
           },
           {
             "result": {
+              "duration": 2000000,
               "status": "passed"
             },
             "line": 19,
@@ -603,7 +631,7 @@
           },
           {
             "result": {
-              "duration": 48000000,
+              "duration": 129000000,
               "status": "passed"
             },
             "line": 20,
@@ -635,18 +663,23 @@
           },
           {
             "result": {
+              "duration": 12000000,
               "status": "passed"
             },
             "line": 26,
-            "name": "User validates response body matches the response in file \"GetScheduleByTenantID\"",
+            "name": "User validates response body matches the response in file \"GetScheduleByTenantID\" at location \"src/test/resources/responseObjects/\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"GetScheduleByTenantID\"",
                   "offset": 58
+                },
+                {
+                  "val": "\"src/test/resources/responseObjects/\"",
+                  "offset": 94
                 }
               ],
-              "location": "com.poc.api.automation.steps.ApiSteps.validateResponseAsPerResponseStoredInFilePath(java.lang.String)"
+              "location": "com.poc.api.automation.steps.ApiSteps.validateResponseAsPerResponseStoredInFilePath(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }
@@ -664,8 +697,8 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-09T19:16:08.106Z",
-        "line": 44,
+        "start_timestamp": "2022-09-14T17:27:00.925Z",
+        "line": 48,
         "name": "Validation of Get Schedule By Invalid Tenanat Id",
         "description": "",
         "id": "get-schedule-by-teanant-id-feature;validation-of-get-schedule-by-invalid-tenanat-id;;2",
@@ -674,9 +707,10 @@
         "steps": [
           {
             "result": {
+              "duration": 3000000,
               "status": "passed"
             },
-            "line": 31,
+            "line": 35,
             "name": "User configures the base uri for api request",
             "match": {
               "location": "com.poc.api.automation.steps.ApiSteps.configureBaseUri()"
@@ -685,9 +719,10 @@
           },
           {
             "result": {
+              "duration": 2000000,
               "status": "passed"
             },
-            "line": 32,
+            "line": 36,
             "name": "User configures the header for request",
             "match": {
               "location": "com.poc.api.automation.steps.ApiSteps.configureHeaders(io.cucumber.datatable.DataTable)"
@@ -710,10 +745,10 @@
           },
           {
             "result": {
-              "duration": 16000000,
+              "duration": 213000000,
               "status": "passed"
             },
-            "line": 37,
+            "line": 41,
             "name": "User executes \"GET\" request  with endpoint \"getSchedulebyTenantId?tenantId\u003dTENANTID006\"",
             "match": {
               "arguments": [
@@ -732,10 +767,10 @@
           },
           {
             "result": {
-              "duration": 15000000,
+              "duration": 3000000,
               "status": "passed"
             },
-            "line": 38,
+            "line": 42,
             "name": "User validates response code for request is 404",
             "match": {
               "arguments": [
@@ -750,18 +785,23 @@
           },
           {
             "result": {
+              "duration": 3000000,
               "status": "passed"
             },
-            "line": 39,
-            "name": "User validates response body matches the response in file \"GetScheduleByNotPresentTenantID\"",
+            "line": 43,
+            "name": "User validates response body matches the response in file \"GetScheduleByNotPresentTenantID\" at location \"src/test/resources/responseObjects/\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"GetScheduleByNotPresentTenantID\"",
                   "offset": 58
+                },
+                {
+                  "val": "\"src/test/resources/responseObjects/\"",
+                  "offset": 104
                 }
               ],
-              "location": "com.poc.api.automation.steps.ApiSteps.validateResponseAsPerResponseStoredInFilePath(java.lang.String)"
+              "location": "com.poc.api.automation.steps.ApiSteps.validateResponseAsPerResponseStoredInFilePath(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }
@@ -779,8 +819,8 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-09T19:16:08.166Z",
-        "line": 45,
+        "start_timestamp": "2022-09-14T17:27:01.175Z",
+        "line": 49,
         "name": "Validation of Get Schedule By Invalid Tenanat Id",
         "description": "",
         "id": "get-schedule-by-teanant-id-feature;validation-of-get-schedule-by-invalid-tenanat-id;;3",
@@ -789,9 +829,10 @@
         "steps": [
           {
             "result": {
+              "duration": 3000000,
               "status": "passed"
             },
-            "line": 31,
+            "line": 35,
             "name": "User configures the base uri for api request",
             "match": {
               "location": "com.poc.api.automation.steps.ApiSteps.configureBaseUri()"
@@ -800,9 +841,10 @@
           },
           {
             "result": {
+              "duration": 2000000,
               "status": "passed"
             },
-            "line": 32,
+            "line": 36,
             "name": "User configures the header for request",
             "match": {
               "location": "com.poc.api.automation.steps.ApiSteps.configureHeaders(io.cucumber.datatable.DataTable)"
@@ -825,10 +867,10 @@
           },
           {
             "result": {
-              "duration": 31000000,
+              "duration": 71000000,
               "status": "passed"
             },
-            "line": 37,
+            "line": 41,
             "name": "User executes \"GET\" request  with endpoint \"getSchedulebyTenantId?tenantId\u003dTENANTID0@@\"",
             "match": {
               "arguments": [
@@ -847,10 +889,10 @@
           },
           {
             "result": {
-              "duration": 16000000,
+              "duration": 2000000,
               "status": "passed"
             },
-            "line": 38,
+            "line": 42,
             "name": "User validates response code for request is 400",
             "match": {
               "arguments": [
@@ -865,18 +907,23 @@
           },
           {
             "result": {
+              "duration": 3000000,
               "status": "passed"
             },
-            "line": 39,
-            "name": "User validates response body matches the response in file \"GetScheduleByNonAlphanumericTenantID\"",
+            "line": 43,
+            "name": "User validates response body matches the response in file \"GetScheduleByNonAlphanumericTenantID\" at location \"src/test/resources/responseObjects/\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"GetScheduleByNonAlphanumericTenantID\"",
                   "offset": 58
+                },
+                {
+                  "val": "\"src/test/resources/responseObjects/\"",
+                  "offset": 109
                 }
               ],
-              "location": "com.poc.api.automation.steps.ApiSteps.validateResponseAsPerResponseStoredInFilePath(java.lang.String)"
+              "location": "com.poc.api.automation.steps.ApiSteps.validateResponseAsPerResponseStoredInFilePath(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }
@@ -894,8 +941,8 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-09T19:16:08.232Z",
-        "line": 46,
+        "start_timestamp": "2022-09-14T17:27:01.278Z",
+        "line": 50,
         "name": "Validation of Get Schedule By Invalid Tenanat Id",
         "description": "",
         "id": "get-schedule-by-teanant-id-feature;validation-of-get-schedule-by-invalid-tenanat-id;;4",
@@ -904,9 +951,10 @@
         "steps": [
           {
             "result": {
+              "duration": 2000000,
               "status": "passed"
             },
-            "line": 31,
+            "line": 35,
             "name": "User configures the base uri for api request",
             "match": {
               "location": "com.poc.api.automation.steps.ApiSteps.configureBaseUri()"
@@ -915,9 +963,131 @@
           },
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
-            "line": 32,
+            "line": 36,
+            "name": "User configures the header for request",
+            "match": {
+              "location": "com.poc.api.automation.steps.ApiSteps.configureHeaders(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "HeaderName",
+                  "HeaderValue"
+                ]
+              },
+              {
+                "cells": [
+                  "Content-Type",
+                  "application/json"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 35000000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "User executes \"GET\" request  with endpoint \"getSchedulebyTenantId?tenantId\u003d\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"getSchedulebyTenantId?tenantId\u003d\"",
+                  "offset": 43
+                }
+              ],
+              "location": "com.poc.api.automation.steps.ApiSteps.executeRequestWithPayloadAndPath(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "User validates response code for request is 400",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 44
+                }
+              ],
+              "location": "com.poc.api.automation.steps.ApiSteps.validateResponseCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "User validates response body matches the response in file \"GetScheduleByNullTenantID\" at location \"src/test/resources/responseObjects/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GetScheduleByNullTenantID\"",
+                  "offset": 58
+                },
+                {
+                  "val": "\"src/test/resources/responseObjects/\"",
+                  "offset": 98
+                }
+              ],
+              "location": "com.poc.api.automation.steps.ApiSteps.validateResponseAsPerResponseStoredInFilePath(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@ValidateGetSchedule"
+          },
+          {
+            "name": "@GetScheduleByTenantIdUnHappyPath"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-09-14T17:27:01.340Z",
+        "line": 51,
+        "name": "Validation of Get Schedule By Invalid Tenanat Id",
+        "description": "",
+        "id": "get-schedule-by-teanant-id-feature;validation-of-get-schedule-by-invalid-tenanat-id;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User configures the base uri for api request",
+            "match": {
+              "location": "com.poc.api.automation.steps.ApiSteps.configureBaseUri()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 36,
             "name": "User configures the header for request",
             "match": {
               "location": "com.poc.api.automation.steps.ApiSteps.configureHeaders(io.cucumber.datatable.DataTable)"
@@ -943,122 +1113,7 @@
               "duration": 47000000,
               "status": "passed"
             },
-            "line": 37,
-            "name": "User executes \"GET\" request  with endpoint \"getSchedulebyTenantId?tenantId\u003d\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"GET\"",
-                  "offset": 14
-                },
-                {
-                  "val": "\"getSchedulebyTenantId?tenantId\u003d\"",
-                  "offset": 43
-                }
-              ],
-              "location": "com.poc.api.automation.steps.ApiSteps.executeRequestWithPayloadAndPath(java.lang.String,java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 38,
-            "name": "User validates response code for request is 400",
-            "match": {
-              "arguments": [
-                {
-                  "val": "400",
-                  "offset": 44
-                }
-              ],
-              "location": "com.poc.api.automation.steps.ApiSteps.validateResponseCode(int)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 16000000,
-              "status": "passed"
-            },
-            "line": 39,
-            "name": "User validates response body matches the response in file \"GetScheduleByNullTenantID\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"GetScheduleByNullTenantID\"",
-                  "offset": 58
-                }
-              ],
-              "location": "com.poc.api.automation.steps.ApiSteps.validateResponseAsPerResponseStoredInFilePath(java.lang.String)"
-            },
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@api"
-          },
-          {
-            "name": "@ValidateGetSchedule"
-          },
-          {
-            "name": "@GetScheduleByTenantIdUnHappyPath"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-09-09T19:16:08.295Z",
-        "line": 47,
-        "name": "Validation of Get Schedule By Invalid Tenanat Id",
-        "description": "",
-        "id": "get-schedule-by-teanant-id-feature;validation-of-get-schedule-by-invalid-tenanat-id;;5",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 31,
-            "name": "User configures the base uri for api request",
-            "match": {
-              "location": "com.poc.api.automation.steps.ApiSteps.configureBaseUri()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "status": "passed"
-            },
-            "line": 32,
-            "name": "User configures the header for request",
-            "match": {
-              "location": "com.poc.api.automation.steps.ApiSteps.configureHeaders(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "HeaderName",
-                  "HeaderValue"
-                ]
-              },
-              {
-                "cells": [
-                  "Content-Type",
-                  "application/json"
-                ]
-              }
-            ],
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 32000000,
-              "status": "passed"
-            },
-            "line": 37,
+            "line": 41,
             "name": "User executes \"GET\" request  with endpoint \"getSchedulebyTenantId?tenantId\u003dTENANTIDNINE\"",
             "match": {
               "arguments": [
@@ -1077,9 +1132,10 @@
           },
           {
             "result": {
+              "duration": 2000000,
               "status": "passed"
             },
-            "line": 38,
+            "line": 42,
             "name": "User validates response code for request is 400",
             "match": {
               "arguments": [
@@ -1094,18 +1150,23 @@
           },
           {
             "result": {
+              "duration": 2000000,
               "status": "passed"
             },
-            "line": 39,
-            "name": "User validates response body matches the response in file \"GetScheduleByNonAlphanumericTenantID\"",
+            "line": 43,
+            "name": "User validates response body matches the response in file \"GetScheduleByNonAlphanumericTenantID\" at location \"src/test/resources/responseObjects/\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"GetScheduleByNonAlphanumericTenantID\"",
                   "offset": 58
+                },
+                {
+                  "val": "\"src/test/resources/responseObjects/\"",
+                  "offset": 109
                 }
               ],
-              "location": "com.poc.api.automation.steps.ApiSteps.validateResponseAsPerResponseStoredInFilePath(java.lang.String)"
+              "location": "com.poc.api.automation.steps.ApiSteps.validateResponseAsPerResponseStoredInFilePath(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }
@@ -1123,8 +1184,8 @@
         ]
       },
       {
-        "start_timestamp": "2022-09-09T19:16:08.357Z",
-        "line": 48,
+        "start_timestamp": "2022-09-14T17:27:01.414Z",
+        "line": 52,
         "name": "Validation of Get Schedule By Invalid Tenanat Id",
         "description": "",
         "id": "get-schedule-by-teanant-id-feature;validation-of-get-schedule-by-invalid-tenanat-id;;6",
@@ -1133,10 +1194,10 @@
         "steps": [
           {
             "result": {
-              "duration": 9000000,
+              "duration": 2000000,
               "status": "passed"
             },
-            "line": 31,
+            "line": 35,
             "name": "User configures the base uri for api request",
             "match": {
               "location": "com.poc.api.automation.steps.ApiSteps.configureBaseUri()"
@@ -1145,9 +1206,10 @@
           },
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
-            "line": 32,
+            "line": 36,
             "name": "User configures the header for request",
             "match": {
               "location": "com.poc.api.automation.steps.ApiSteps.configureHeaders(io.cucumber.datatable.DataTable)"
@@ -1170,10 +1232,10 @@
           },
           {
             "result": {
-              "duration": 39000000,
+              "duration": 57000000,
               "status": "passed"
             },
-            "line": 37,
+            "line": 41,
             "name": "User executes \"GET\" request  with endpoint \"getSchedulebyTenantId?tenantId\u003d0000082\"",
             "match": {
               "arguments": [
@@ -1192,9 +1254,10 @@
           },
           {
             "result": {
+              "duration": 2000000,
               "status": "passed"
             },
-            "line": 38,
+            "line": 42,
             "name": "User validates response code for request is 400",
             "match": {
               "arguments": [
@@ -1209,18 +1272,23 @@
           },
           {
             "result": {
+              "duration": 2000000,
               "status": "passed"
             },
-            "line": 39,
-            "name": "User validates response body matches the response in file \"GetScheduleByNonAlphanumericTenantID\"",
+            "line": 43,
+            "name": "User validates response body matches the response in file \"GetScheduleByNonAlphanumericTenantID\" at location \"src/test/resources/responseObjects/\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"GetScheduleByNonAlphanumericTenantID\"",
                   "offset": 58
+                },
+                {
+                  "val": "\"src/test/resources/responseObjects/\"",
+                  "offset": 109
                 }
               ],
-              "location": "com.poc.api.automation.steps.ApiSteps.validateResponseAsPerResponseStoredInFilePath(java.lang.String)"
+              "location": "com.poc.api.automation.steps.ApiSteps.validateResponseAsPerResponseStoredInFilePath(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }
@@ -1266,7 +1334,7 @@
     "line": 7,
     "elements": [
       {
-        "start_timestamp": "2022-09-09T19:16:08.420Z",
+        "start_timestamp": "2022-09-14T17:27:01.493Z",
         "line": 31,
         "name": "Validation of Create Schedule API",
         "description": "",
@@ -1276,6 +1344,7 @@
         "steps": [
           {
             "result": {
+              "duration": 2000000,
               "status": "passed"
             },
             "line": 12,
@@ -1287,6 +1356,7 @@
           },
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 13,
@@ -1312,11 +1382,11 @@
           },
           {
             "result": {
-              "duration": 78000000,
+              "duration": 59000000,
               "status": "passed"
             },
             "line": 18,
-            "name": "User executes \"PUT\" request  with payload in file \"UpdateSchedule\" and endpoint as \"/UpdateSchedule/20010987FRDE987620018765000000002017\"",
+            "name": "User executes \"PUT\" request  with payload at location \"src/test/resources/requestObjects/\" in file \"UpdateSchedule\" and endpoint as \"/UpdateSchedule/20010987FRDE987620018765000000002017\"",
             "match": {
               "arguments": [
                 {
@@ -1324,20 +1394,25 @@
                   "offset": 14
                 },
                 {
+                  "val": "\"src/test/resources/requestObjects/\"",
+                  "offset": 54
+                },
+                {
                   "val": "\"UpdateSchedule\"",
-                  "offset": 50
+                  "offset": 99
                 },
                 {
                   "val": "\"/UpdateSchedule/20010987FRDE987620018765000000002017\"",
-                  "offset": 83
+                  "offset": 132
                 }
               ],
-              "location": "com.poc.api.automation.steps.ApiSteps.executeRequestWithPayloadAndPath(java.lang.String,java.lang.String,java.lang.String)"
+              "location": "com.poc.api.automation.steps.ApiSteps.executeRequestWithPayloadAndPath(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
+              "duration": 2000000,
               "status": "passed"
             },
             "line": 19,
@@ -1355,7 +1430,7 @@
           },
           {
             "result": {
-              "duration": 16000000,
+              "duration": 24000000,
               "status": "passed"
             },
             "line": 20,
@@ -1373,7 +1448,7 @@
           },
           {
             "result": {
-              "duration": 16000000,
+              "duration": 20000000,
               "status": "passed"
             },
             "line": 21,
@@ -1391,7 +1466,7 @@
           },
           {
             "result": {
-              "duration": 21000000,
+              "duration": 19000000,
               "status": "passed"
             },
             "line": 22,
@@ -1417,19 +1492,23 @@
           },
           {
             "result": {
-              "duration": 10000000,
+              "duration": 3000000,
               "status": "passed"
             },
             "line": 27,
-            "name": "User validates response body matches the response in file \"UpdateSchedule\"",
+            "name": "User validates response body matches the response in file \"UpdateSchedule\" at location \"src/test/resources/responseObjects/\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"UpdateSchedule\"",
                   "offset": 58
+                },
+                {
+                  "val": "\"src/test/resources/responseObjects/\"",
+                  "offset": 87
                 }
               ],
-              "location": "com.poc.api.automation.steps.ApiSteps.validateResponseAsPerResponseStoredInFilePath(java.lang.String)"
+              "location": "com.poc.api.automation.steps.ApiSteps.validateResponseAsPerResponseStoredInFilePath(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           }

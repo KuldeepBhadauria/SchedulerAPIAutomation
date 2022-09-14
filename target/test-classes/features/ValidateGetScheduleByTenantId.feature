@@ -23,11 +23,11 @@ Feature: Get Schedule By Teanant Id Feature
     |scheduleId      |20010987FRDE987620018765000000002017|
     |recordStatus    |SCHEDULED                           |
  
-    And User validates response body matches the response in file "GetScheduleByTenantID"
+    And User validates response body matches the response in file "GetScheduleByTenantID" at location "<responseFolderPath>"
     
     Examples:
-    |requestMethod|
-    |GET          |
+    |requestMethod|responseFolderPath                 |
+    |GET          |src/test/resources/responseObjects/|
     
       
   @GetScheduleByTenantIdUnHappyPath
@@ -40,14 +40,14 @@ Feature: Get Schedule By Teanant Id Feature
     
     And User executes "<requestMethod>" request  with endpoint "<Endpoint>"
     Then User validates response code for request is <ResponseCode>
-    And User validates response body matches the response in file "<fileName>"
+    And User validates response body matches the response in file "<fileName>" at location "<responseFolderPath>"
     
     Examples:
     
-    |requestMethod|        Endpoint                            |ResponseCode|        fileName                    |    
-    |GET          |getSchedulebyTenantId?tenantId=TENANTID006  |     404    |GetScheduleByNotPresentTenantID     | 
-    |GET          |getSchedulebyTenantId?tenantId=TENANTID0@@  |     400    |GetScheduleByNonAlphanumericTenantID|
-    |GET          |getSchedulebyTenantId?tenantId=             |     400    |GetScheduleByNullTenantID           |
-    |GET          |getSchedulebyTenantId?tenantId=TENANTIDNINE |     400    |GetScheduleByNonAlphanumericTenantID|
-    |GET          |getSchedulebyTenantId?tenantId=0000082      |     400    |GetScheduleByNonAlphanumericTenantID|
+    |requestMethod|        Endpoint                            |ResponseCode|        fileName                    |responseFolderPath                 |    
+    |GET          |getSchedulebyTenantId?tenantId=TENANTID006  |     404    |GetScheduleByNotPresentTenantID     |src/test/resources/responseObjects/| 
+    |GET          |getSchedulebyTenantId?tenantId=TENANTID0@@  |     400    |GetScheduleByNonAlphanumericTenantID|src/test/resources/responseObjects/|
+    |GET          |getSchedulebyTenantId?tenantId=             |     400    |GetScheduleByNullTenantID           |src/test/resources/responseObjects/|
+    |GET          |getSchedulebyTenantId?tenantId=TENANTIDNINE |     400    |GetScheduleByNonAlphanumericTenantID|src/test/resources/responseObjects/|
+    |GET          |getSchedulebyTenantId?tenantId=0000082      |     400    |GetScheduleByNonAlphanumericTenantID|src/test/resources/responseObjects/|
    
